@@ -1,0 +1,128 @@
+/* Réinitialise les marges et les paddings par défaut pour tous les éléments */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* Définition de la police par défaut pour le corps de la page */
+body {
+     font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+/* Styles pour la bannière */
+.banner {
+     position: relative;
+     /* Position relative pour les enfants positionnés absolument */
+     width: 100%;
+     overflow: hidden;
+     /* Empêche le débordement de l'image */
+}
+
+/* Image de la bannière */
+.banIm {
+     width: 100%;
+     /* Prend toute la largeur de la page */
+     height: 80vh;
+     /* Maintient les proportions de l'image */
+}
+
+/* Contenu de la bannière */
+.banner-content {
+     position: absolute;
+     /* Positionnement absolu par rapport à .banner */
+     top: 35%;
+     /* Centrage vertical */
+     left: 50%;
+     /* Centrage horizontal */
+     transform: translate(-50%, -50%);
+     /* Ajuste la position pour centrer */
+     color: white;
+     /* Couleur du texte */
+     text-align: center;
+     /* Centrage du texte */
+     padding: 20px;
+     /* Espacement interne */
+     background-color: rgba(0, 0, 0, 0.5);
+     /* Fond semi-transparent pour améliorer la lisibilité */
+}
+
+/* Style pour le titre dans la bannière */
+.banner-content h1 {
+     font-size: 2rem;
+     margin-bottom: 20px;
+     /* Espacement en bas du titre */
+}
+
+/* Styles pour la liste dans le contenu de la bannière */
+.banner-content ul {
+     list-style: none;
+     /* Supprime les puces de la liste */
+     padding: 0;
+     display: flex;
+     gap: 20px;
+     flex-direction: row;
+     /* Disposition en colonne */
+}
+
+/* Styles pour chaque élément de la liste */
+.banner-content ul li {
+     background-color: lightgreen;
+     /* Couleur de fond par défaut */
+     border: 1px solid black;
+     /* Bordure noire */
+     border-radius: 5px;
+     /* Coins arrondis */
+     padding: 10px;
+     /* Espacement interne */
+     font-weight: bold;
+     /* Texte en gras */
+}
+
+/* Styles spécifiques pour le premier élément de la liste */
+.banner-content ul li:first-child {
+     background-color: lightslategray;
+}
+
+/* Effet au survol du premier élément de la liste */
+.banner-content ul li:first-child:hover {
+     background-color: rgb(8, 117, 153);
+}
+
+/* Styles spécifiques pour le dernier élément de la liste */
+.banner-content ul li:last-child {
+     background-color: lightslategray;
+}
+
+/* Styles pour les liens dans les éléments de la liste */
+.banner-content ul li a {
+     text-decoration: none;
+     /* Supprime le soulignement */
+     color: black;
+     /* Couleur du texte */
+     display: block;
+     /* Prend toute la largeur de l'élément */
+}
+
+/* Effet au survol des éléments de la liste */
+.banner-content ul li:hover {
+     background-color: rgba(255, 255, 255, 0.8);
+     color: black;
+}
+
+/* Design responsive pour les petits écrans */
+@media (max-width: 768px) {
+     .banner-content ul {
+          flex-direction: column;
+          /* Disposition en colonne */
+          gap: 10px;
+          /* Espacement réduit entre les éléments */
+     }
+
+     .banner-content {
+          width: 90%;
+          /* Réduit la largeur du contenu */
+          top: 60%;
+          /* Ajuste le centrage vertical */
+     }
+}
