@@ -18,6 +18,7 @@
                <ul>
                     <li id="index.php"><a href="#accueil">Accueil</a></li>
                     <li><a href="#apropos">A propos de nous</a></li>
+                    <li><a href="#Services">Services</a></li>
                     <li><a href="#webinaire">Webinaire</a></li>
                </ul>
           </div>
