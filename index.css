@@ -23,7 +23,7 @@ body {
 .banIm {
      width: 100%;
      /* Prend toute la largeur de la page */
-     height: 80vh;
+     min-height: 80vh;
      /* Maintient les proportions de l'image */
 }
 
@@ -125,4 +125,41 @@ body {
           top: 60%;
           /* Ajuste le centrage vertical */
      }
+}
+
+/***************************Nos valeurs************************************/
+.values{
+margin: 40px;
+}
+
+.values h2{
+     margin:10px 0;
+     color: rgb(12, 62, 78);
+     font-weight: bold;
+     font-size: 2rem;
+}
+
+.values-text{
+ display: flex;
+ flex-direction: row; 
+ gap: 20px;
+ text-align: justify;   
+}
+
+.values-image img{
+     height: 300px;
+     width: 300px;
+}
+
+/***************************Nos engagements************************************/
+
+.commitments{
+     margin: 50px;
+     padding: 30px;
+     background:lightblue;
+     text-align: justify;
+}
+
+.commitments h2{
+     margin: 10px 0;
 }

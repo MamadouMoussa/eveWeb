@@ -1,0 +1,252 @@
+/* Réinitialisation des styles */
+body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     width: 100%;
+}
+
+/* Conteneur principal */
+.container {
+     box-sizing: border-box;
+     min-height: 60vh;
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     /* Centrer les éléments horizontalement */
+     align-items: center;
+     /* Centrer les éléments verticalement */
+     background: linear-gradient(rgba(0, 0, 0, 0.719), rgba(4, 177, 245, 0.5)), url('img/voyage-a.jpg');
+     /* Fond avec dégradé semi-transparent et image de fond */
+     background-size: cover;
+     /* Ajustement de la taille de l'image de fond */
+     background-position: center;
+     /* Centrer l'image de fond */
+     padding: 20px;
+     position: relative;
+     /* Position relative pour les éléments positionnés absolument */
+     overflow: hidden;
+     /* Masquer le débordement pour les animations */
+}
+
+/* Sous-conteneur à gauche */
+.container .sub-container-1 {
+     flex: 0 1 70%;
+     /* Flexible: ne pas grandir, rétrécir si nécessaire, largeur initiale de 70% */
+     padding: 20px;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     /* Ombre portée pour le texte */
+     transform: translateY(0);
+     transition: transform 0.5s ease;
+     /* Transition pour animation */
+}
+
+.container:hover .sub-container-1 {
+     transform: translateY(-20px);
+     /* Déplacement vers le haut au survol */
+}
+
+.container .sub-container-1 h1 {
+     color: #fff;
+     /* Texte blanc */
+     font-size: 3rem;
+     /* Taille de police agrandie */
+     text-align: center;
+     margin-bottom: 20px;
+     transition: color 0.3s ease;
+     /* Transition pour la couleur de texte */
+}
+
+.container:hover .sub-container-1 h1 {
+     color: #ff0000;
+     /* Changement de couleur au survol */
+}
+
+.container .sub-container-1 p {
+     font-size: 1.5rem;
+     text-align: justify;
+     font-weight: bold;
+     color: #0a0a0a;
+     /* Couleur de texte claire */
+     opacity: 0.9;
+     /* Opacité réduite */
+     transition: opacity 0.3s ease;
+     /* Transition pour l'opacité */
+}
+
+.container:hover .sub-container-1 p {
+     opacity: 1;
+     /* Pleine opacité au survol */
+}
+
+/* Décoration en forme de demi-cercle */
+.deco {
+     background:rgba(196, 216, 226, 0.5);
+     /* Fond orange semi-transparent */
+     width: 70%;
+     height: 60%;
+     position: absolute;
+     top: 120px;
+     left: 0;
+     border-top-left-radius: 100%;
+     /* Bordure arrondie */
+     border-bottom-right-radius: 100%;
+     z-index: -1;
+     /* Mettre en arrière-plan */
+     transition: transform 0.5s ease;
+     /* Transition pour l'animation */
+}
+
+.container:hover .deco {
+     transform: scale(1.1);
+     /* Zoom léger au survol */
+}
+
+/* Sous-conteneur à droite avec fond d'image */
+.container .sub-container-2 {
+     background-color: rgba(0, 0, 0, 0.5);
+     /* Fond semi-transparent */
+     width: 30%;
+     /* Largeur du sous-conteneur */
+     text-align: center;
+     padding-top: 100px;
+     /* Espacement en haut */
+     margin: 30px 20px;
+     /* Marge autour du sous-conteneur */
+     border-radius: 10px;
+     /* Coins arrondis */
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+     /* Lueur externe */
+     transition: background-color 0.3s ease;
+     /* Transition pour la couleur de fond */
+}
+
+.container:hover .sub-container-2 {
+     background-color: rgba(0, 0, 0, 0.8);
+     /* Assombrissement au survol */
+}
+
+.container .sub-container-2 p {
+     font-weight: bold;
+     font-size: 1.5rem;
+     text-align: center;
+     color: #fff;
+     /* Texte blanc sur fond semi-transparent */
+     transition: color 0.3s ease;
+     /* Transition pour la couleur de texte */
+}
+
+.container:hover .sub-container-2 p {
+     color: #ffcc00;
+     /* Changement de couleur au survol */
+}
+
+
+
+/* Animation pour la section des pays où nous recrutons */
+
+/* Conteneur principal */
+.pays {
+     background: rgba(174, 239, 250, 0.8);
+     /* Fond bleu clair semi-transparent */
+     padding: 20px;
+     text-align: center;
+}
+
+/* Titre h2 */
+.pays h2 {
+     color: #007bff;
+     /* Bleu captivant */
+     padding-top: 10px;
+}
+
+/* Liste des images */
+.pays ul {
+     display: flex;
+     flex-wrap: wrap;
+     /* Permet aux images de passer à la ligne si nécessaire */
+     justify-content: center;
+     /* Centrer les éléments horizontalement */
+     list-style: none;
+     padding: 0;
+}
+
+/* Images des pays */
+.pays ul img {
+     width: 90px;
+     height: 70px;
+     margin: 10px;
+     /* Marge autour des images */
+     border-radius: 50%;
+     /* Coins arrondis */
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     /* Ombre légère */
+     transition: transform 0.3s ease;
+     /* Transition pour l'animation au survol */
+}
+
+/* Animation de rotation au survol des images */
+.pays ul img:hover {
+     transform: scale(1.1) rotate(360deg);
+     /* Zoom légèrement augmenté et rotation de 360 degrés au survol */
+}
+
+/* Animation pour la section de la méthode de recrutement */
+
+/* Conteneur principal */
+.method-recrutement {
+     background: linear-gradient(#1cf8a4,rgba(52, 11, 235, 0.719), rgba(4, 177, 245, 0.5));
+     /* Fond orange vif */
+     padding: 20px;
+     text-align: center;
+     position: relative;
+     /* Position relative pour les animations d'images */
+}
+
+/* Contenu de la méthode de recrutement */
+.method-recrutement .method-recrutement-content {
+     display: inline-block;
+     width: 200px;
+     /* Largeur des conteneurs de contenu */
+     margin: 20px;
+     vertical-align: top;
+     /* Alignement en haut */
+     transition: transform 0.3s ease;
+     /* Transition pour le zoom au survol */
+}
+
+/* Image de recrutement */
+.method-recrutement img[alt*="recrutement"] {
+     width: 100%;
+     /* Largeur des images à 100% pour remplir le conteneur */
+     height: auto;
+     /* Hauteur automatique pour maintenir les proportions */
+     border-radius: 10px;
+     /* Coins arrondis */
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     /* Ombre légère */
+     transition: transform 0.3s ease;
+     /* Transition pour l'animation au survol */
+}
+
+/* Texte de la méthode de recrutement */
+.method-recrutement p {
+     text-align: justify;
+     color: #fff;
+     /* Texte blanc */
+}
+
+/* Animation au survol */
+.method-recrutement .method-recrutement-content:hover {
+     transform: scale(1.1);
+     /* Zoom légèrement augmenté au survol */
+}
+
+.method-recrutement img[alt*="recrutement"]:hover {
+     transform: scale(1.05);
+     /* Zoom légèrement augmenté au survol */
+}
+
+.method-recrutement-content p a{
+     text-decoration: none;
+}

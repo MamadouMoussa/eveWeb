@@ -1,6 +1,6 @@
 /*********************************** Pied de page *******************************************/
 footer {
-     background-color: #007bff;
+     background: linear-gradient(rgba(0, 0, 0, 0.719), rgba(4, 177, 245, 0.5)), url('img/voyage-a.jpg');
      padding: 25px;
      display: flex;
      justify-content: space-between;
@@ -55,7 +55,7 @@ footer {
      margin-bottom: 10px;
      font-size: 1.2em;
      font-weight: bold;
-     color: #555;
+     color: #fff;
 }
 
 /* Styles spécifiques pour les liens des réseaux sociaux */
