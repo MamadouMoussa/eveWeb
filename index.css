@@ -13,153 +13,151 @@ body {
 /* Styles pour la bannière */
 .banner {
      position: relative;
-     /* Position relative pour les enfants positionnés absolument */
      width: 100%;
      overflow: hidden;
-     /* Empêche le débordement de l'image */
 }
 
 /* Image de la bannière */
 .banIm {
+     margin-top: 110px;
      width: 100%;
-     /* Prend toute la largeur de la page */
-     min-height: 80vh;
-     /* Maintient les proportions de l'image */
+     height: 80vh;
+     object-fit: cover;
 }
 
 /* Contenu de la bannière */
 .banner-content {
      position: absolute;
-     /* Positionnement absolu par rapport à .banner */
-     top: 35%;
-     /* Centrage vertical */
+     top: 50%;
      left: 50%;
-     /* Centrage horizontal */
      transform: translate(-50%, -50%);
-     /* Ajuste la position pour centrer */
      color: white;
-     /* Couleur du texte */
      text-align: center;
-     /* Centrage du texte */
      padding: 20px;
-     /* Espacement interne */
-     background-color: rgba(0, 0, 0, 0.5);
-     /* Fond semi-transparent pour améliorer la lisibilité */
 }
 
-/* Style pour le titre dans la bannière */
 .banner-content h1 {
-     font-size: 2rem;
+     font-size: 3rem;
      margin-bottom: 20px;
-     /* Espacement en bas du titre */
 }
 
-/* Styles pour la liste dans le contenu de la bannière */
 .banner-content ul {
      list-style: none;
-     /* Supprime les puces de la liste */
      padding: 0;
      display: flex;
      gap: 20px;
-     flex-direction: row;
-     /* Disposition en colonne */
 }
 
-/* Styles pour chaque élément de la liste */
 .banner-content ul li {
-     background-color: lightgreen;
-     /* Couleur de fond par défaut */
-     border: 1px solid black;
-     /* Bordure noire */
+     background: linear-gradient(rgba(4, 177, 245, 0.8), rgba(0, 0, 0, 0.9));
+     border: 1.5px solid #fff;
      border-radius: 5px;
-     /* Coins arrondis */
      padding: 10px;
-     /* Espacement interne */
      font-weight: bold;
-     /* Texte en gras */
 }
 
-/* Styles spécifiques pour le premier élément de la liste */
-.banner-content ul li:first-child {
-     background-color: lightslategray;
-}
-
-/* Effet au survol du premier élément de la liste */
-.banner-content ul li:first-child:hover {
-     background-color: rgb(8, 117, 153);
-}
-
-/* Styles spécifiques pour le dernier élément de la liste */
-.banner-content ul li:last-child {
-     background-color: lightslategray;
-}
-
-/* Styles pour les liens dans les éléments de la liste */
 .banner-content ul li a {
      text-decoration: none;
-     /* Supprime le soulignement */
-     color: black;
-     /* Couleur du texte */
+     color: #fff;
      display: block;
-     /* Prend toute la largeur de l'élément */
 }
 
-/* Effet au survol des éléments de la liste */
 .banner-content ul li:hover {
-     background-color: rgba(255, 255, 255, 0.8);
+     background-color: rgb(35, 235, 9);
      color: black;
 }
 
-/* Design responsive pour les petits écrans */
 @media (max-width: 768px) {
      .banner-content ul {
           flex-direction: column;
-          /* Disposition en colonne */
           gap: 10px;
-          /* Espacement réduit entre les éléments */
      }
 
      .banner-content {
           width: 90%;
-          /* Réduit la largeur du contenu */
           top: 60%;
-          /* Ajuste le centrage vertical */
      }
 }
 
-/***************************Nos valeurs************************************/
-.values{
-margin: 40px;
+/* Section values */
+.values {
+     margin: 40px;
 }
 
-.values h2{
-     margin:10px 0;
+.values h2 {
+     margin: 10px 0;
      color: rgb(12, 62, 78);
      font-weight: bold;
      font-size: 2rem;
 }
 
-.values-text{
- display: flex;
- flex-direction: row; 
- gap: 20px;
- text-align: justify;   
+.values-text {
+     display: flex;
+     flex-direction: row;
+     gap: 40px;
+     text-align: justify;
+     line-height: 1.5;
 }
 
-.values-image img{
+.values-image img {
      height: 300px;
      width: 300px;
+     border-radius: 10px;
 }
 
-/***************************Nos engagements************************************/
-
-.commitments{
-     margin: 50px;
+/* Section commitments */
+.commitments {
+     margin: 40px;
      padding: 30px;
-     background:lightblue;
+     background: linear-gradient(rgba(4, 177, 245, 0.8), rgba(0, 0, 0, 0.9));
      text-align: justify;
+     line-height: 1.5;
+     color: #fff;
 }
 
-.commitments h2{
+.commitments h2 {
      margin: 10px 0;
+     font-weight: bold;
+     font-size: 2rem;
+}
+
+/* Section method-recrutement */
+.method-recrutement {
+     background: linear-gradient(#1cf8a4, rgba(52, 11, 235, 0.719), rgba(4, 177, 245, 0.5));
+     padding: 20px;
+     text-align: center;
+     position: relative;
+}
+
+.method-recrutement .method-recrutement-content {
+     display: inline-block;
+     width: 200px;
+     margin: 20px;
+     vertical-align: top;
+     transition: transform 0.3s ease;
+}
+
+.method-recrutement img {
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     transition: transform 0.3s ease;
+}
+
+.method-recrutement p {
+     text-align: justify;
+     color: #fff;
+}
+
+.method-recrutement .method-recrutement-content:hover {
+     transform: scale(1.1);
+}
+
+.method-recrutement img:hover {
+     transform: scale(1.05);
+}
+
+.method-recrutement-content p a {
+     text-decoration: none;
 }

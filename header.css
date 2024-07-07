@@ -1,81 +1,245 @@
-body {
+/* Réinitialisation des styles */
+* {
      margin: 0;
      padding: 0;
-     font-family: 'Courier New', Courier, monospace, sans-serif;
+     box-sizing: border-box;
 }
 
-.header {
+/* Styles globaux */
+body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styles de la barre de navigation */
+.navbar {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     background: linear-gradient(rgba(4, 177, 245, 0.5), rgba(0, 0, 0, 0.644)), url('img/voyage-a.jpg');
-     padding: 0 30px;
-     height: 100px;
-   
+     background: linear-gradient(rgb(4, 177, 245), rgb(0, 0, 0));
+     padding: 20px 30px;
+     height: 110px;
      z-index: 2;
+     position: fixed;
+     width: 100%;
+     transition: background-color 0.3s ease-in-out;
+     color: #fff;
 }
 
-#logo a img {
-     height: 70px;
-     border: solid 0.15rem #fff;
-     border-radius: 50px;
+/* Logo dans la barre de navigation */
+.navbar #logo img {
+     width: 100px;
+     border-radius: 5px;
+     opacity: 70%;
+     border: solid 0.13rem #fff;
 }
 
-.nav ul {
-     display: flex;
-     gap: 30px;
+/* Menu principal */
+.menu {
      list-style: none;
-     padding: 0;
-     margin: 50px 0 0 0;
+     display: flex;
+     z-index: 3;
 }
 
-.nav ul li a {
+.menu li {
+     position: relative;
+}
+
+.menu li a {
      text-decoration: none;
-     color: white;
-     font-weight: bold;
-     font-size: 1.2rem;
+     color: inherit;
+     padding: 10px 15px;
+     display: flex;
+     align-items: center;
+     font-size: 1rem;
+     }
+
+.menu li a:hover {
+     background: linear-gradient(rgba(4, 177, 245, 0.8), rgba(0, 0, 0, 0.9));
+     border-radius: 7px 0;
 }
 
-.nav ul li:hover a {
-     background-color: #fff;
-     padding: 7px;
-     border-radius: 3px;
-     color: #007bff;
+/* Sous-menu */
+.menu li ul.submenu {
+     display: none;
+     position: absolute;
+     
+     top: 100%;
+     left: 0;
+     background: linear-gradient(rgba(4, 177, 245, 0.8), rgba(0, 0, 0, 0.9));
 }
 
-#contact a {
-     color: rgb(209, 253, 13);
-     font-weight: bold;
-     font-size: 2rem;
+.menu li ul.submenu li{
+     border-bottom: #fff 1px solid;
+}
+
+.menu li:hover ul.submenu {
+     display: block;
+}
+
+.menu li ul.submenu li {
+     width: 200px;
+     list-style: none;
+}
+
+/* Styles pour les sous-menus de niveau 2 */
+.sub-menu-2 {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #081d1f;
+}
+
+.menu li.hover-me:hover .sub-menu-2 {
+     display: block;
+}
+
+.sub-menu-2 ul {
+     list-style: none;
+}
+
+.sub-menu-2 ul li {
+     padding: 8px 10px;
+}
+
+/* Styles pour le menu burger */
+.burger-menu {
+     display: none;
+     /* Caché par défaut */
+}
+
+/* Animation du burger menu lorsqu'il est ouvert */
+.burger-menu.open .line:nth-child(1) {
+     transform: rotate(45deg) translate(5px, 5px);
+     /* Transformation pour la première ligne */
+}
+
+.burger-menu.open .line:nth-child(2) {
+     opacity: 0;
+     /* Cacher la deuxième ligne */
+}
+
+.burger-menu.open .line:nth-child(3) {
+     transform: rotate(-45deg) translate(5px, -5px);
+     /* Transformation pour la troisième ligne */
+}
+
+/* Bouton "Contact" */
+.request-button {
+     background-color: #e65100;
+     color: #fff;
+     padding: 8px 10px;
+     border: none;
+     border-radius: 5px;
      text-decoration: none;
-     margin-right: 70px;
+     margin-right: 20px;
 }
 
-#contact a:hover {
-     padding: 5px;
-     border-radius: 3px;
-     color: rgb(160, 6, 6);
-     text-decoration: underline;
+.request-button:hover {
+     background: linear-gradient(rgba(129, 205, 235, 0.8), rgba(53, 51, 51, 0.9));
+     font-weight: bold;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-     .header {
+/* Media Query pour les petits écrans */
+@media screen and (max-width: 768px) {
+
+     /* Menu principal */
+     .menu {
+          display: none;
+          /* Caché par défaut sur les petits écrans */
           flex-direction: column;
-          align-items: center;
-          background-color: black;
+          padding-left: 35%;
+          width: 100%;
+          min-height: 50vh;
+          position: absolute;
+          top: 98px;
+          left: 0;
+          background: linear-gradient(rgba(4, 177, 245, 0.8), rgba(0, 0, 0, 0.9));
      }
 
-     .nav ul {
-          flex-direction: column;
-          align-items: center;
+     /* Largeur des éléments de menu sur les petits écrans */
+     .menu li {
+          width: 35%;
      }
 
-     .nav ul li {
-          margin: 5px 0;
+     /* Sous-menu */
+     .menu li ul.submenu {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 90%;
+          /* Positionner le sous-menu à droite du menu parent */
+          margin-left: 15px;
+          /* Ajouter une marge à gauche pour le décalage */
+          width: 200px;
+          background: linear-gradient(rgba(4, 177, 245, 0.8), rgba(0, 0, 0, 0.9));
      }
 
-     #contact {
-          margin-top: 5px;
+          .menu li ul.submenu li{
+border-bottom: solid #fff 1px;
+          }
+
+.menu li ul.submenu li:last-child{
+     border-bottom: none;
+}
+
+     .menu li:hover ul.submenu {
+          display: block;
      }
+
+     .menu li ul.submenu li {
+          width: 100%;
+          /* Ajuster la largeur des éléments de sous-menu */
+          list-style: none;
+     }
+
+     /* Burger menu */
+     .burger-menu {
+          display: block;
+          /* Affichage du burger menu */
+          cursor: pointer;
+     }
+
+     .burger-menu .line {
+          width: 25px;
+          height: 3px;
+          background-color: #fff;
+          margin: 5px;
+          transition: all 0.3s ease;
+     }
+
+     /* Animation du burger menu lorsqu'il est ouvert */
+     .burger-menu.open .line:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+          /* Transformation pour la première ligne */
+     }
+
+     .burger-menu.open .line:nth-child(2) {
+          opacity: 0;
+          /* Cacher la deuxième ligne */
+     }
+
+     .burger-menu.open .line:nth-child(3) {
+          transform: rotate(-45deg) translate(5px, -5px);
+          /* Transformation pour la troisième ligne */
+     }
+
+     /* Affichage du menu principal lorsqu'il est actif */
+     .menu.active {
+          display: flex;
+     }
+}
+
+/* Icones */
+.fa-angle-right {
+     float: right;
+     color: #fff;
+     font-size: 0.8rem;
+     margin-top: 8px;
+}
+
+.fa,
+.fas {
+     padding: 4px;
+     font-size: 0.8rem;
 }

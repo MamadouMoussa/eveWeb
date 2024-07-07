@@ -44,9 +44,7 @@
           <div class="footer-partners">
                <h3>Partenaires</h3>
                <ul>
-                    <li><a href="https://www.canalplus-afrique.com/gn/offres-tv">??????????????</a></li>
-                    <li><a href="https://m.startimestv.com/browser/">????????????????</a></li>
-                    <li><a href="https://www.charika.ma/societe-ste-nour-azzar-1028676">???????????????????</a>
+                    <li><a href="https://www.polyvalence.ma/gallery.html">Intitut Polyvalence</a></li>
                     </li>
                </ul>
           </div>
