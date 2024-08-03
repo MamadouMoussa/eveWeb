@@ -6,23 +6,23 @@ html {
      font-family: Arial, sans-serif;
 }
 
-.container {
+.main {
      height: 80vh;
      display: flex;
      justify-content: flex-end;
-     /* Aligner sur la gauche */
      align-items: center;
-     /* Aligner en haut */
-     background-image: url('img/etudes.jpg');
+     background-image: url('img/etudier/etudes.jpg');
      background-size: cover;
      background-position: center;
      padding-right: 10%;
-     /* Ajuster pour rapprocher de la droite */
+     margin-top: 90px;
+
 }
 
 .choix ul {
      list-style-type: none;
      padding: 0;
+     
 }
 
 .choix ul li {
@@ -55,22 +55,22 @@ html {
 
 
 /*
-==========================================================================================================================
+==================================================================================================================
                                                   Partie pourquoi à l'étranger
-==========================================================================================================================
+==================================================================================================================
 */
 
 .why-abroad {
      display: flex;
      align-items: stretch;
-     /* Ensures both columns stretch to the same height */
      padding: 20px;
+     gap: 20px;
      background-color: #f5f5f5;
 }
 
 .img-content {
      width: 50%;
-     background-image: url('img/why-abroad.jpeg');
+     background-image: url('img/etudier/etuder_diplome.jpg');
      background-size: cover;
      background-position: center;
      margin-right: 20px;
@@ -79,7 +79,6 @@ html {
      align-items: center;
      justify-content: center;
      flex-shrink: 0;
-     /* Prevents image from shrinking */
 }
 
 .img-content h3 {
@@ -88,14 +87,11 @@ html {
      padding: 10px;
      border-radius: 5px;
      margin-top: 20px;
-     /* Adjust as needed */
 }
 
 .text-content {
      flex: 1;
-     /* Allows text content to expand */
      overflow: hidden;
-     /* Hide overflow, optional */
 }
 
 .text-content ul {
@@ -114,85 +110,187 @@ x-content ul li:last-child {
 
 
 /*
-==========================================================================================================================
+==================================================================================================================
                                                   Meilleur destinations pour étudier à l'étranger
-==========================================================================================================================
+==================================================================================================================
 */
-
 .best-choices {
      display: flex;
+     gap: 20px;
      align-items: stretch;
-     /* Ensures both columns stretch to the same height */
      padding: 20px;
      background-color: #f5f5f5;
 }
 
 .img-choices {
      width: 50%;
-     background-image: url('img/best-choices.jpeg');
+     background-image: url('img/etudier/best_destination.jpg');
      background-size: cover;
      background-position: center;
      margin-right: 20px;
      border-radius: 10px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
      flex-shrink: 0;
-     /* Prevents image from shrinking */
+     height: 400px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
-.img-choices h3 {
-     color: white;
-     background-color: rgba(0, 0, 0, 0.5);
-     padding: 10px;
-     border-radius: 5px;
-     margin-top: 20px;
-     /* Adjust as needed */
+
+
+.container {
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     background-color: rgba(0, 0, 0, 0.384);;
+     width: 500px;
+     
 }
+
+h1 {
+     text-align: center;
+     color: yellow;
+}
+
+form {
+     display: flex;
+     flex-direction: column;
+}
+
+label {
+     margin-bottom: 8px;
+}
+
+select {
+     padding: 8px;
+     margin-bottom: 16px;
+     border-radius: 4px;
+     border: 1px solid #cccccc;
+     font-size: 16px;
+}
+
+select[disabled] {
+     color: #999999;
+}
+
 
 .text-content {
-     flex: 1;
-     /* Allows text content to expand */
-     overflow: hidden;
-     /* Hide overflow, optional */
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     flex-grow: 1;
+     align-items: center;
 }
 
-.text-content ul {
-     padding: 0;
+.flag-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 40px;
 }
 
-.text-content ul li {
-     margin: 0 0 10px 10px;
-     font-size: 1.1em;
+.flag-item {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
 }
 
-.text-content ul li:last-child {
-     margin-bottom: 0;
+.flag-image img {
+     width: 100px;
+     height: auto;
+     border-radius: 5px;
+}
+
+.flag-name {
+     margin-top: 10px;
+     font-weight: bold;
 }
 
 
 /*
-==========================================================================================================================
-                                                  Pourquoi nous EVE
-==========================================================================================================================
+==================================================================================================================
+                                             Build a studies project
+==================================================================================================================
+*/
+
+
+.studies-plan {
+     margin: 20px 40px;
+     background: #ffffff;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+}
+
+.studies-plan h1 {
+     background: linear-gradient(rgba(4, 177, 245, 0.8), rgba(0, 0, 0, 0.9));
+     color: #ffffff;
+     padding: 10px 0;
+     text-align: center;
+     margin-top: 0;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+}
+
+.studies-plan ol {
+     counter-reset: step-counter;
+     padding-left: 0;
+}
+
+.studies-plan ol li {
+     counter-increment: step-counter;
+     margin-bottom: 20px;
+     padding-left: 10px;
+     list-style: none;
+}
+
+.studies-plan ol li:before {
+     content: counter(step-counter);
+     background-color: #04b1f5;
+     color: white;
+     font-weight: bold;
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+     text-align: center;
+     display: inline-block;
+     margin-right: 10px;
+}
+
+.studies-plan h3 {
+     color: #04b1f5;
+}
+
+.studies-plan p {
+     text-align: justify;
+     margin: 10px 0;
+}
+
+/*
+===================================================================================================================
+                                        Bloc pourquoi nous choisir EVE
+===================================================================================================================
 */
 
 .nous-choisir{
      text-align: center;
-     background-color: lightskyblue;
+     background: linear-gradient(rgba(4, 177, 245, 0.8), rgba(0, 0, 0, 0.9));
      font-style: italic;
      font-size: 2rem;
-     margin: 10px;
+     padding: 10px 5px;
+     color: #f5f5f5;
+     margin: 20px;
+     border-radius: 10px 10px 0 0;
 }
 
 .image-grid {
      display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-     gap: 27px;
-     margin-left: 10px;
-     /* Réduit la marge à 10px */
-     margin-right: 10px;
-     /* Ajoute une marge de 10px à droite */
+     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     grid-auto-flow:inherit;
+     gap: 25px;
+     margin-left: 20px;
+     margin-right: 20px;
      justify-content: center;
 }
 
@@ -204,11 +302,20 @@ x-content ul li:last-child {
      max-width: 100%;
      height: auto;
      min-height: 350px;
+     background-size: cover ;
 }
 
 .image-item h3 {
      margin-top: 10px;
      font-size: 16px;
+     color: blue;
+     text-align: center;
+}
+
+.image-item p {
+     margin-top: 10px;
+     font-size: 16px;
+     text-align: justify;
 }
 
 .first-item {
@@ -217,4 +324,17 @@ x-content ul li:last-child {
 
 .last-item {
      margin-left: 10px;
+}
+
+.contact-eve{
+     text-align: justify;
+     padding: 25px 20px;
+     color: green;
+     font-weight: bold;
+}
+
+
+.contact-eve .avoid-mistake{
+     color: red;
+     padding: 20px 0;
 }

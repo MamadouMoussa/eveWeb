@@ -35,12 +35,11 @@
 
                <!-- À propos -->
                <li>
-                    <a href="apropos.php"><i class="fa fa-user"></i> EVE <i class="fa fa-angle-right"></i></a>
+                    <a href="#eve"><i class="fa fa-user"></i> EVE <i class="fa fa-angle-right"></i></a>
                     <!-- Sous-menu à propos -->
                     <ul class="submenu">
-                         <li><a href="#missi">Raison d'être</a></li>
-                         <li><a href="#missi">Engagements</a></li>
-                         <li><a href="#missi">Missions</a></li>
+                         <li><a href="#engagements">Engagements</a></li>
+                         <li><a href="#missions">Missions</a></li>
                          <li><a href="#vision">vision</a></li>
                          <li><a href="#equipe">Notre équipe</a></li>
                     </ul>
@@ -51,9 +50,9 @@
                     <a href="###"><i class="fa fa-clone"></i> Services <i class="fa fa-angle-right"></i></a>
                     <!-- Sous-menu services -->
                     <ul class="submenu">
-                         <li><a href="#etudes">Etudes à l'étranger</a></li>
-                         <li><a href="#immigration">Immigration</a></li>
-                         <li><a href="#recrutement">Recrutement pour les universités</a></li>
+                         <li><a href="etudier.php">Etudes à l'étranger</a></li>
+                         <li><a href="immigrer.php">Immigration</a></li>
+                         <li><a href="partenariat.php">Recrutement pour les universités</a></li>
                     </ul>
                </li>
                <!-- Divers -->

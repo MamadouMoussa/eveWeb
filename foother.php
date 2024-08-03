@@ -4,7 +4,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>footer</title>
      <!-- Lien vers Font Awesome pour les icônes -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
      <!-- Lien vers la feuille de style externe -->
@@ -19,24 +19,24 @@
           <div class="footer-shortcuts">
                <h3>Raccourcis</h3>
                <ul>
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="apropos.php">À propos</a></li>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="index.php" title="Allez à l'accueil">Accueil</a></li>
+                    <li><a href="mailto:eve.fra.can@gmailcom" title="Envoyer un email"> Contact</a></li>
                </ul>
           </div>
 
           <!-- Section des réseaux sociaux -->
-          <div class="footer-social">
+          <div class=" footer-social">
                <h3>Réseaux Sociaux</h3>
                <ul>
                     <!-- Icônes avec les liens vers les réseaux sociaux -->
-                    <li><a href="https://www.facebook.com/eve.fra.ca"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href="https://www.youtube.com/@eget22"><i class="fab fa-youtube"></i> YouTube</a></li>
-                    <li><a href="tel:+33618073170"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-                    <li><a href="mailto:eve.fran.can@gmail.com"><i class="far fa-envelope"></i> Email</a></li>
-                    <li><a href="http://tiktok.com/@eget2022"><i class="fab fa-tiktok"></i> TikTok</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/eve.fra.ca" title="Facebook"> <i class="fab fa-facebook"></i>
+                              Facebook</a></li>
+                    <li><a href="https://www.youtube.com/@eget22" title="YouTube"><i class="fab fa-youtube"></i>
+                              YouTube</a></li>
+                    <li><a href="tel:+33618073170" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    <li><a href="http://tiktok.com/@eget2022" title="TikTok"><i class="fab fa-tiktok"></i> TikTok</a>
+                    </li>
+                    <li><a href="#" title="instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
                </ul>
           </div>
 
@@ -44,7 +44,8 @@
           <div class="footer-partners">
                <h3>Partenaires</h3>
                <ul>
-                    <li><a href="https://www.polyvalence.ma/gallery.html">Intitut Polyvalence</a></li>
+                    <li><a href="https://www.polyvalence.ma/gallery.html" title="Intitut Polyvalence Maroc">Intitut
+                              Polyvalence</a></li>
                     </li>
                </ul>
           </div>

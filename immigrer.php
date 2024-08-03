@@ -4,7 +4,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>EVE</title>
+     <title>EVE-voyage</title>
      <link rel="stylesheet" href="immigrer.css">
 </head>
 
@@ -20,11 +20,11 @@
      =============================================================---->
      <header class="banner">
           <h1>Bienvenue chez EVE</h1>
-          <p>Votre partenaire pour des aventures inoubliables dans les quetre coins du monde en toute sécurité dans la
+          <p>Votre partenaire pour des aventures inoubliables dans les quatre coins du monde en toute sécurité dans la
                légalité
           <div class="subscribe">
-               <a href="#singIn" class="sinscrire">S'inscrire</a>
-               <a href="signUp" class="seconnecter">Se conneter</a>
+               <a href="#singIn" class="sinscrire">Les destinations</a>
+               <a href="signUp" class="seconnecter"> Simuler un devis</a>
           </div>
           </p>
      </header>
@@ -42,8 +42,7 @@
                     rêve, des
                     conseils pratiques, et des offres exclusives.</p>
                <div class="destinations">
-                    <a href="#">Toutes les destination</a>
-                    <a href="#">Nos offres exclusives</a>
+                    <a href="#">Offres exclusives</a>
                </div>
           </div>
           <div class="image-content">

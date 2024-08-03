@@ -11,21 +11,19 @@
 <body>
      <!-- Header -->
      <?php include('header.php'); ?>
+     <br>
 
      <div class="container">
           <div class="sub-container-1">
-               <h1>Recruter des étudiants internationaux pour mon établissement</h1>
+               <h1>Recruter les étudiants internationaux pour votre établissement</h1>
                <p>
-                    Nous recrutons des étudiants internationaux dynamiques avec une solide formation académique pour
-                    votre établissement. Explorez notre expertise en recrutement de talents internationaux pour enrichir
-                    votre équipe.
+                    Nous recommendons et recrutons les étudiants internationaux dynamiques avec une solide formation
+                    de base pour votre établissement.
                </p>
-
-               <div class="deco"></div>
           </div>
 
           <div class="sub-container-2">
-               <p>Les étudiants internationaux souhaitent vos formations</p>
+               <p>Avec nous, vos salles de classes ne seront plus vides</p>
           </div>
      </div>
 

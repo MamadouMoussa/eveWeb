@@ -17,7 +17,7 @@
           <img src="logo/ban-3.jpg" alt="Image de bannière" class="banIm">
           <div class="banner-content">
                <h1>Que désirez-vous ?</h1>
-               <ul>
+               <ul id="eve">
                     <li><a href="etudier.php">Poursuivre des études à l'étranger</a></li>
                     <li><a href="immigrer.php">S'expatrier</a></li>
                     <li><a href="partenariat.php">Des étudiants pour votre établissement</a></li>
@@ -26,38 +26,37 @@
      </div>
 
      <!-- Section de la raison d'être -->
-     <section class="values" id="eve">
-          <h2>Notre raison d'être</h2>
+     <section class="values">
+          <h2>L'agence EVE</h2>
           <div class="values-text">
-               <p>Chez EVE, l'ère numérique a révolutionné le voyage en offrant des opportunités inédites pour enrichir
-                    nos vies et élargir nos horizons. Notre mission est de rendre ces possibilités accessibles à tous à
-                    travers des expériences personnalisées et enrichissantes. En intégrant la technologie au cœur de nos
-                    services, nous créons des voyages uniques, non seulement pour explorer, mais aussi pour apprendre et
-                    se connecter avec les cultures locales. Nous collaborons avec des experts locaux et utilisons des
-                    outils numériques avancés pour offrir des itinéraires sur mesure et des activités immersives,
-                    adaptés aux besoins individuels de chaque voyageur. Notre objectif est de transformer chaque voyage
-                    en une expérience significative, où la découverte personnelle et l'authenticité culturelle se
-                    rencontrent, façonnant ainsi une vision plus profonde et enrichie du monde qui nous entoure.</p>
-               <div class="values-image">
-                    <img src="img/raison-detre.jpg" alt="Raison d'être">
-               </div>
+               <p>
+                    L'agence EVE à été créee prémièrement sous l'initiativede porter assistance aux jeunes étudiant
+                    poursuivre leurs études souhaitant poursuivre leurs études supérieur à l'étranger ou les parents
+                    souhaitant voir leurs fils supérieur à l'étranger pour que leur volonté se réalise tel un rêve. La
+                    réussite de
+                    cette initative appuyé par de nombreuses demandes de nos clients et des parents d'étudiantsnous
+                    ont motivé à nous lancer dans les processus d'immigration légale </p>
           </div>
      </section>
 
      <!-- Section des engagements -->
      <section class="commitments">
-          <h2>Nos engagements</h2>
+          <h2 id="engagements">Nos engagements</h2>
           <div class="commitments-text">
-               <p>L’avènement de l’ère numérique a métamorphosé notre approche du voyage et de la découverte du monde.
-                    Chez EVE, nous nous engageons à exploiter le potentiel de cette révolution pour offrir des
-                    expériences de voyage inédites, mémorables et significatives. Nous croyons en un tourisme
-                    responsable, respectueux des cultures et de l'environnement, et nous nous efforçons de promouvoir
-                    des pratiques durables dans toutes nos activités.</p>
+               <p> L'ère numérique a profondément redéfini notre manière de voyager et d'explorer le monde. Chez
+                    EVE,
+                    nous nous engageons à exploiter cette transformation pour offrir des expériences de voyage
+                    inédites,
+                    mémorables et enrichissantes. Nous croyons fermement en un tourisme responsable, respectueux
+                    des
+                    cultures et de l'environnement, et nous nous dévouons à promouvoir des pratiques durables à
+                    chaque
+                    étape de notre activité.</p>
           </div>
      </section>
 
      <!-- Section des missions -->
-     <section class="values">
+     <section class="values" id="missions">
           <h2>Nos missions</h2>
           <div class="values-text">
                <p>L'avènement de l'ère numérique a profondément transformé notre façon de voyager et de découvrir le
@@ -77,7 +76,7 @@
      </section>
 
      <!-- Section de la vision -->
-     <section class="values">
+     <section class="values" id="vision">
           <h2>Notre vision</h2>
           <div class="values-text">
                <p>L’avènement de l’ère numérique a révolutionné notre manière de voyager et de découvrir le monde. Chez
@@ -97,7 +96,7 @@
      </section>
 
      <!-- Section de l'équipe -->
-     <section class="commitments">
+     <section class="commitments" id="equipe">
           <h2>Notre équipe</h2>
           <div class="commitments-text">
                <p>Nous sommes une équipe passionnée au sein d'EVE, animée par la conviction que l'avènement de l'ère
